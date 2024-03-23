@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylesDark.css" id="estilo">
+
+</head>
+<body>
+    <section id="cont-general">
+        <div id="cont-calculadora">
+            <div id="cont-escritura">
+                <input type="text" id="pantalla">
+                
+            <div id="cont-botones">
+                <!-- Fila 1 -->
+                <button id="ac" class="btn" onclick="limpiarPantalla()">AC</button>
+                <button id="borrar" class="btn" onclick="borrarUltimo()">B</button>
+                <button id="porcentaje" class="btn" onclick="calcularPorcentaje()">%</button>
+                <button id="dividir" class="btn op" onclick="agregarOperador('/')">÷</button>
+                <!-- Fila 2 -->
+                <button id="siete" class="btn" onclick="agregarValor('7')">7</button>
+                <button id="ocho" class="btn" onclick="agregarValor('8')">8</button>
+                <button id="nueve" class="btn" onclick="agregarValor('9')">9</button>
+                <button id="multiplicar" class="btn" onclick="agregarOperador('*')">x</button>
+                <!-- Fila 3 -->
+                <button id="cuatro" class="btn" onclick="agregarValor('4')">4</button>
+                <button id="cinco" class="btn" onclick="agregarValor('5')">5</button>
+                <button id="seis" class="btn" onclick="agregarValor('6')">6</button>
+                <button id="restar" class="btn" onclick="agregarOperador('-')">-</button>
+                <!-- Fila 4 -->
+                <button id="uno" class="btn" onclick="agregarValor('1')">1</button>
+                <button id="dos" class="btn" onclick="agregarValor('2')">2</button>
+                <button id="tres" class="btn" onclick="agregarValor('3')">3</button>
+                <button id="sumar" class="btn" onclick="agregarOperador('+')">+</button>
+                <!-- Fila 5 -->
+                <button id="cero" class="btn doble" onclick="agregarValor('0')">0</button>
+                <button id="punto" class="btn" onclick="agregarValor('.')">.</button>
+                <button id="igual" class="btn op" onclick="calcular()">=</button>
+                
+            </div>
+        </div>
+
+            <button class="dia" onclick="cambiar()"> </button>
+    </section>
+
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
